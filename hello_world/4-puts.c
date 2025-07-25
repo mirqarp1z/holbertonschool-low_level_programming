@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - prints
+ * main - prints a specific sentence using puts
  *
- * returns 0
+ * returns Always) 
  */
 int main(void)
 {
