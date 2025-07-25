@@ -2,7 +2,7 @@
 /**
  * main - prints a specific sentence using puts
  *
- * returns Always 0 (success)
+ * Return:  Always 0 (success)
  */
 int main(void)
 {
