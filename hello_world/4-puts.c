@@ -1,7 +1,8 @@
 #!/bin/bash
 #include <stdio.h>
-int main() {
-	puts("Programming is like building a multilingual puzzle");
-	return 0;
+
+int main(void)
+{
+    puts("\"Programming is like building a multilingual puzzle\"");
+    return 0;
 }
-gcc -o 4-puts_0
