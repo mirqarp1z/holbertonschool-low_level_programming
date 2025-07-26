@@ -10,17 +10,18 @@ int main(void)
 	char ch_up;
 
 	ch_low = 'a';
+	ch_up = 'A'
 
 	while (ch_low <= 'z')
 	{
 		putchar(ch_low);
 		ch_low++;
 	}
+	putchar('\n');
 	while (ch_up <= 'Z')
 	{
 		putchar(ch_up);
 		ch_up++;
 	}
-	putchar('\n');
 	return (0);
 }
