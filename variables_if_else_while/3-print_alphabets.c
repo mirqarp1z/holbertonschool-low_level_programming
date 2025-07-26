@@ -16,7 +16,6 @@ int main(void)
 		putchar(ch_low);
 		ch_low++;
 	}
-	
 	ch_up = 'A';
 
 	while (ch_up <= 'Z')
