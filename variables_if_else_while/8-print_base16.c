@@ -11,9 +11,9 @@ int main(void)
 
 	x = 0;
 
-	ch = a;
+	ch = 'a';
 
-	while (x <= 10)
+	while (x < 10)
 	{
 		putchar(x + '0');
 		x++;
