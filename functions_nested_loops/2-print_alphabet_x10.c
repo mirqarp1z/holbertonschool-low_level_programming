@@ -7,12 +7,16 @@
  */
 void print_alphabet_x10(void)
 {
-	int d = 1;
-	char alp[] = "abcdefghijklmnopqrstuvwxyz";
+	int setir_sayi = 1;
+	char herf = 'a';
 
-	while (d < 11)
+	while (setir_sayi < 11)
 	{
-		_putchar(alp);
-		d++;
+		while (herf <= 'z')
+		{
+			_putchar(herf);
+			herf++;
+		}
+		setir_sayi++;
 	}
 }
