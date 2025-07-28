@@ -17,5 +17,5 @@ void print_most_numbers(void)
 		}
 		dg++;
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
