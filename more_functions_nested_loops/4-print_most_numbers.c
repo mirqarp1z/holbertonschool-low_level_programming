@@ -13,13 +13,13 @@ void print_most_numbers(void)
 	{
 		if ((dg == 2) || (dg == 4))
 		{
-			ch++;
+			dg++;
 			continue;
 		}
 		else
 		{
 			_putchar(dg + '0');
 		}
-		_putchar(\n);
+		_putchar('\n');
 	}
 }
