@@ -7,18 +7,25 @@
  */
 void more_numbers(void)
 {
-	int lines = 1;
+    int lines = 1;
+    int digit;
 
-	int digit = 0;
-
-	while (lines <= 10)
-	{
-		while (digit <= 14)
-		{
-			_putchar(digit + '0');
-			digit++;
-		}
-		lines++;
-	}
-	_putchar('\n');
+    while (lines <= 10)
+    {
+        digit = 0;
+        while (digit <= 14)
+        {
+            if (digit < 10)
+                _putchar(digit + '0');
+            else
+            {
+                _putchar((digit / 10) + '0');
+                _putchar((digit % 10) + '0');
+            }
+            digit++;
+        }
+        _putchar('\n');
+        lines++;
+    }
 }
+
