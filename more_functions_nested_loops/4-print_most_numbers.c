@@ -13,7 +13,6 @@ void print_most_numbers(void)
 	{
 		if ((dg == 2) || (dg == 4))
 		{
-			dg++;
 			continue;
 		}
 		else
@@ -21,5 +20,6 @@ void print_most_numbers(void)
 			_putchar(dg + '0');
 		}
 		_putchar('\n');
+		dg++;
 	}
 }
