@@ -9,9 +9,9 @@
 void more_numbers(void)
 {
 	int line = 0;
-	
+
 	int num;
-	
+
 	while (line < 10)
 	{
 		num = 0;
