@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _isupper - checks if the letter is upper.
+ * _isupper - checks if the letter is upper.
  *
  * @c: letter.
  *
