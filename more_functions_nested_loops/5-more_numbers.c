@@ -8,20 +8,21 @@
 
 void more_numbers(void)
 {
-    int line = 0;
-    int num;
-
-    while (line < 10)
-    {
-        num = 0;
-        while (num <= 14)
-        {
-            if (num >= 10)
-                _putchar('1');
-            _putchar((num % 10) + '0');
-            num++;
-        }
-        _putchar('\n');
-        line++;
-    }
+	int line = 0;
+	
+	int num;
+	
+	while (line < 10)
+	{
+		num = 0;
+		while (num <= 14)
+		{
+			if (num >= 10)
+				_putchar('1');
+			_putchar((num % 10) + '0');
+			num++;
+		}
+		_putchar('\n');
+		line++;
+	}
 }
