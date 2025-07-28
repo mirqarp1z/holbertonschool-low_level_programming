@@ -2,7 +2,7 @@
 /**
  * int _isupper - checks if the letter is upper.
  *
- * @c - letter.
+ * @c: letter.
  *
  * Return - 1 if letter is upper, otherwise 0.
  */
