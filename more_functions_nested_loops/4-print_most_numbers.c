@@ -14,7 +14,7 @@ void print_most_numbers(void)
 		if ((dg != 2) && (dg != 4))
 		{
 			_putchar(dg + '0');
-			dg++;
 		}
+		dg++;
 	}
 }
