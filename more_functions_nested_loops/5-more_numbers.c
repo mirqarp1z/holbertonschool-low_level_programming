@@ -15,8 +15,8 @@ void more_numbers(void)
 	{
 		while ( digit <= 14)
 		{
-			_putchar(dg + '0');
-			dg++;
+			_putchar(digit + '0');
+			digit++;
 		}
 		lines++;
 	}
