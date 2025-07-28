@@ -13,7 +13,7 @@ void more_numbers(void)
 
 	while (lines <= 10)
 	{
-		while ( digit <= 14)
+		while (digit <= 14)
 		{
 			_putchar(digit + '0');
 			digit++;
