@@ -36,7 +36,7 @@ void print_triangle(int size)
 				row++;
 				_putchar('\n');
 			}
+			row++;
 		}
-		
 	}
 }
