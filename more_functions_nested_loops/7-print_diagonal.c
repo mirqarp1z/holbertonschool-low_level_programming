@@ -7,15 +7,21 @@
 
 void print_diagonal(int n)
 {
-	if ((n == 0) || (n > 0))
+	int spc = 0;
+	
+	spc = n;
+
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		while (n > 0)
+		while ((n > 0) && (spc > 0))
 		{
 			_putchar('\\');
+			_putchar(' ');
+			spc--;
 			n--;
 		}
 		_putchar('\n');
