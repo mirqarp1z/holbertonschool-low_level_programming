@@ -34,7 +34,10 @@ int main(void)
 		{
 			printf("%d", num);
 		}
-		printf(" ");
+		if (num < 100)
+		{
+			printf(" ");
+		}
 		num++;
 	}
 	printf("\n");
