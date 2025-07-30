@@ -28,9 +28,6 @@ void print_triangle(int size)
 				_putchar(' ');
 				htag++;
 			}
-
-			row = 1;
-
 			while (htag <= row)
 			{
 				_putchar('#');
