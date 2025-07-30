@@ -30,7 +30,7 @@ void print_triangle(int size)
 			}
 			row = 1;
 
-			while (row <= htag)
+			while (htag <= row)
 			{
 				_putchar('#');
 				row++;
