@@ -7,9 +7,8 @@
 
 void print_diagonal(int n)
 {
-	int spc = 0;
-	
-	spc = n;
+	int spc;
+	int line = 0;
 
 	if (n <= 0)
 	{
@@ -17,14 +16,18 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		while ((n > 0) && (spc > 0))
+		while (line < n)
 		{
+			spc = 0;
+
+			while (spc < line)
+			{
+				_putchar(' ');
+				spc++;
+			}
 			_putchar('\\');
-			_putchar(' ');
-			spc--;
-			n--;
 			_putchar('\n');
+			line++;
 		}
-		_putchar('\n');
 	}
 }
