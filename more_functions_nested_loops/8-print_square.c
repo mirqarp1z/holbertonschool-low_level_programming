@@ -16,11 +16,11 @@ void print_square(int size)
 	}
 	else
 	{
-		row = 0;
+		row = 1;
 
 		while (row <= size)
 		{
-			clm = 0;
+			clm = 1;
 
 			while (clm <= size)
 			{
