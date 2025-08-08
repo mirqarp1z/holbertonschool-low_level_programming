@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * main - check the code
+ * _strchr - check the code
  * @s: source
  * @c: character
  *
