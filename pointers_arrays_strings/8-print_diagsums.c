@@ -6,7 +6,7 @@
  * @a: Pointer to the first element of the matrix
  * @size: Size of the square matrix
  *
- * Description: Calculates and prints the sum of the main and secondary diagonals
+ * Description: Calculates and prints the sum
  */
 
 void print_diagsums(int *a, int size)
