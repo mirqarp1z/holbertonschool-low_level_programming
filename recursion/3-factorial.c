@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * This function serves the factorial realness: returns the factorial of n.
- * If n is negative, we keep it shady and return -1.
- * Zero? Oh honey, that's a solid 1, no questions asked. ✨
+ * factorial - Calculates the factorial of a given number.
+ * @n: The number for which the factorial is calculated.
+ *
+ * Return: The factorial of the number. If n is negative, returns -1.
+ *         Factorial of 0 is 1.
  */
 
 int factorial(int n)
