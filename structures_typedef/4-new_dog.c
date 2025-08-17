@@ -1,42 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "dog.h"
 
-typedef struct dog
-{
-    char *name;
-    float age;
-    char *owner;
-} dog_t;
+/**
+ * new_dog - a function that creates a new dog
+ *@name: name of dog
+ *@age: age of dog
+ *@owner: owner of dog
+ *Return: pointer to new dog
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t *new_dog;
+	dog_t *newdog;
 
-    new_dog = malloc(sizeof(dog_t));
-    if (new_dog == NULL)
-        return (NULL);
+	newdog = malloc(sizeof(dog_t));
+	if (newdog == NULL)
+	{
+		free(newdog);
+		return (NULL);
+	}
 
-    // Allocate memory for the name and copy the string
-    new_dog->name = malloc(strlen(name) + 1);
-    if (new_dog->name == NULL)
-    {
-        free(new_dog);
-        return (NULL);
-    }
-    strcpy(new_dog->name, name);
+	newdog->name = malloc(sizeof(char) * strlen(name) + 1);
+	newdog->owner = malloc(sizeof(char) * strlen(owner) + 1);
 
-    // Allocate memory for the owner and copy the string
-    new_dog->owner = malloc(strlen(owner) + 1);
-    if (new_dog->owner == NULL)
-    {
-        free(new_dog->name);
-        free(new_dog);
-        return (NULL);
-    }
-    strcpy(new_dog->owner, owner);
+	if (newdog->name == NULL ||  newdog->owner == NULL)
+	{
+		free(newdog->name);
+		free(newdog->owner);
+		free(newdog);
+		return (NULL);
+	}
+	newdog->name = strdup(name);
+	newdog->owner = strdup(owner);
+	newdog->age = age;
 
-    new_dog->age = age;
-
-    return (new_dog);
+	return (newdog);
 }
