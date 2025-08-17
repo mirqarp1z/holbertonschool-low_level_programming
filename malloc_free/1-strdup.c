@@ -7,6 +7,7 @@
  *
  * Return: The length of the string.
  */
+
 unsigned int my_length(char *s);
 
 /**
@@ -17,41 +18,39 @@ unsigned int my_length(char *s);
  */
 char *_strdup(char *str)
 {
-    char *cp;
-    unsigned int ln;
-    unsigned int i;
-
-    if (str == NULL)
-    {
-        return (NULL);
-    }
-
-    ln = my_length(str) + 1;
-
-    cp = malloc(ln * sizeof(char));
-
-    if (cp == NULL)
-    {
-        return (NULL);
-    }
-
-    for (i = 0; i < ln; i++)
-    {
-        cp[i] = str[i];
-    }
-
-    return (cp);
+	char *cp;
+	unsigned int ln;
+	unsigned int i;
+	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	
+	ln = my_length(str) + 1;
+	
+	cp = malloc(ln * sizeof(char));
+	
+	if (cp == NULL)
+	{
+		return (NULL);
+	}
+	
+	for (i = 0; i < ln; i++)
+	{
+		cp[i] = str[i];
+	}
+	
+	return (cp);
 }
 
 unsigned int my_length(char *s)
 {
-    unsigned int len = 0;
-
-    while (s[len] != '\0')
-    {
-        len++;
-    }
-
-    return (len);
+	unsigned int len = 0;
+	
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
 }
-
