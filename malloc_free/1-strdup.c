@@ -2,21 +2,19 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Duplicates a string.
- * @str: The string to be duplicated.
+ * my_length - Calculates the length of a string.
+ * @s: The string to measure.
  *
- * Return: A pointer to the newly allocated memory containing a copy of the
- *         string str. Returns NULL if str is NULL or if memory allocation
- *         fails.
- *
- * This function allocates memory to store a duplicate of the input string 
- * and returns a pointer to the new memory space. The allocated memory can 
- * later be freed using the free() function. If str is NULL or if memory 
- * allocation fails, the function returns NULL. The length of the string is 
- * calculated using the custom my_length function, which manually counts the 
- * characters of the string until the null terminator is reached.
+ * Return: The length of the string.
  */
+unsigned int my_length(char *s);
 
+/**
+ * _strdup - Duplicates a string.
+ * @str: The string to duplicate.
+ *
+ * Return: A pointer to the newly allocated memory, or NULL if failed.
+ */
 char *_strdup(char *str)
 {
     char *cp;
@@ -44,15 +42,6 @@ char *_strdup(char *str)
 
     return (cp);
 }
-
-/**
- * my_length - Calculates the length of a string.
- * @s: The string to measure.
- *
- * Return: The length of the string (excluding the null terminator).
- *
- * 
- */
 
 unsigned int my_length(char *s)
 {
